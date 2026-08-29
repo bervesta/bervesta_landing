@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Bervesta</title>
+  <meta name="description" content="Bervesta: nuestros proyectos y enlaces.">
+
+  <!-- Open Graph -->
+  <meta property="og:title" content="Bervesta">
+  <meta property="og:description" content="Bervesta: nuestros proyectos y enlaces.">
+  <meta property="og:image" content="images/bervesta-logo.png">
+  <meta property="og:type" content="website">
+  <meta name="twitter:card" content="summary">
+  <meta name="theme-color" content="#e5342a">
+
+  <link rel="alternate" hreflang="es" href="/es/">
+  <link rel="alternate" hreflang="ca" href="/ca/">
+  <link rel="alternate" hreflang="x-default" href="/">
+
+  <link rel="icon" type="image/png" href="images/bervesta-logo-favicon.png">
+  <link rel="stylesheet" href="css/styles.css">
+</head>
+<body>
+
+  <main class="page">
+    <header class="hero">
+      <h1 class="sr-only">Bervesta</h1>
+      <img class="hero__logo" src="images/bervesta-logo.png" alt="Logo de Bervesta" width="160" height="160">
+      <p class="hero__tagline">Redirigiendo…</p>
+    </header>
+
+    <noscript>
+      <p>
+        <a href="es/">Continuar en español</a> · <a href="ca/">Continua en català</a>
+      </p>
+    </noscript>
+  </main>
+
+  <script>
+    (function () {
+      var lang = (navigator.language || (navigator.languages && navigator.languages[0]) || "es").toLowerCase();
+      var target = lang.indexOf("ca") === 0 ? "ca/" : "es/";
+      window.location.replace(target);
+    })();
+  </script>
+</body>
+</html>
