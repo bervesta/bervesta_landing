@@ -164,6 +164,7 @@ body {
 .link-btn__icon--img {
   border-radius: 8px;
   overflow: hidden;
+  background: var(--color-white);
 }
 .link-btn__icon--img img {
   width: 100%;
